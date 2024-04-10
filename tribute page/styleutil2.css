@@ -1,0 +1,219 @@
+/*Colors*/
+
+/* Red */
+.red { color: red; }
+
+/* Blue */
+.blue { color: blue; }
+
+/* Green */
+.green { color: green; }
+
+/* Yellow */
+.yellow { color: yellow; }
+
+/* Purple */
+.purple { color: purple; }
+
+/* Orange */
+.orange { color: orange; }
+
+/* Gray */
+.gray { color: gray; }
+
+/* Brown */
+.brown { color: brown; }
+
+/* Pink */
+.pink { color: pink; }
+
+/* Teal */
+.teal { color: teal; }
+
+/* Cyan */
+.cyan { color: cyan; }
+
+/* Magenta */
+.magenta { color: magenta; }
+
+/* Olive */
+.olive { color: olive; }
+
+/* Indigo */
+.indigo { color: indigo; }
+
+/* Lavender */
+.lavender { color: lavender; }
+
+/* Maroon */
+.maroon { color: maroon; }
+
+/* Navy */
+.navy { color: navy; }
+
+/* Silver */
+.silver { color: silver; }
+
+/* Gold */
+.gold { color: gold; }
+
+/* Slate */
+.slate { color: slate; }
+
+/* Steel */
+.steel { color: steel; }
+
+/* Turquoise */
+.turquoise { color: turquoise; }
+
+/* Dark Red */
+.dark-red { color: darkred; }
+
+/* Dark Blue */
+.dark-blue { color: darkblue; }
+
+/* Dark Green */
+.dark-green { color: darkgreen; }
+
+/* Dark Gray */
+.dark-gray { color: darkgray; }
+
+/* Dark Brown */
+.dark-brown { color: darkbrown; }
+
+/* Dark Orange */
+.dark-orange { color: darkorange; }
+
+/* Light Gray */
+.light-gray { color: lightgray; }
+
+/* Light Blue */
+.light-blue { color: lightblue; }
+
+/* Light Green */
+.light-green { color: lightgreen; }
+
+/* Light Yellow */
+.light-yellow { color: lightyellow; }
+
+/* Light Purple */
+.light-purple { color: lightpurple; }
+
+/* Light Orange */
+.light-orange { color: lightorange; }
+
+/* Light Pink */
+.light-pink { color: lightpink; }
+
+/* Light Teal */
+.light-teal { color: lightteal; }
+
+/* Light Cyan */
+.light-cyan { color: lightcyan; }
+
+/* Light Magenta */
+.light-magenta { color: lightmagenta; }
+
+/* Light Olive */
+.light-olive { color: lightolive; }
+
+/* Light Indigo */
+.light-indigo { color: lightindigo; }
+
+/* Light Lavender */
+.light-lavender { color: lightlavender; }
+
+/* Light Maroon */
+.light-maroon { color: lightmaroon; }
+
+/* Light Navy */
+.light-navy { color: lightnavy; }
+
+/* Light Silver */
+.light-silver { color: lightsilver; }
+
+/* Light Gold */
+.light-gold { color: lightgold; }
+
+/* Light Slate */
+.light-slate { color: lightslate; }
+
+/* Light Steel */
+.light-steel { color: lightsteel; }
+
+/* Light Turquoise */
+.light-turquoise { color: lightturquoise; }
+
+/* Custom Color Example */
+.custom-color { color: #FFAABB; }
+
+/*Some margin and padding classes from tailwind*/
+
+/* Margin Utilities */
+.m-0 { margin: 0; }
+.m-1 { margin: 0.25rem; }
+.m-2 { margin: 0.5rem; }
+.m-3 { margin: 0.75rem; }
+.m-4 { margin: 1rem; }
+.m-5 { margin: 1.25rem; }
+.m-6 { margin: 1.5rem; }
+.m-7 { margin: 1.75rem; }
+.m-8 { margin: 2rem; }
+.m-9 { margin: 2.25rem; }
+.m-auto { margin: auto; }
+
+.mx-0 { margin-left: 0; margin-right: 0; }
+/* ... (similarly for mx-1 to mx-9) */
+
+.my-0 { margin-top: 0; margin-bottom: 0; }
+/* ... (similarly for my-1 to my-9) */
+
+.ml-0 { margin-left: 0; }
+/* ... (similarly for ml-1 to ml-9) */
+
+.mr-0 { margin-right: 0; }
+/* ... (similarly for mr-1 to mr-9) */
+
+
+/* Padding Utilities */
+.p-0 { padding: 0; }
+.p-1 { padding: 0.25rem; }
+.p-2 { padding: 0.5rem; }
+.p-3 { padding: 0.75rem; }
+.p-4 { padding: 1rem; }
+.p-5 { padding: 1.25rem; }
+.p-6 { padding: 1.5rem; }
+.p-7 { padding: 1.75rem; }
+.p-8 { padding: 2rem; }
+.p-9 { padding: 2.25rem; }
+
+.p-px { padding: 1px; }
+
+.px-0 { padding-left: 0; padding-right: 0; }
+/* ... (similarly for px-1 to px-9) */
+
+.py-0 { padding-top: 0; padding-bottom: 0; }
+/* ... (similarly for py-1 to py-9) */
+
+.pl-0 { padding-left: 0; }
+/* ... (similarly for pl-1 to pl-9) */
+
+.pr-0 { padding-right: 0; }
+/* ... (similarly for pr-1 to pr-9) */
+
+/* Padding Utilities with Custom px-n */
+.p-px { padding: var(--padding-px, 1px); }
+
+@for $i from 0 to 100 {
+  .p-px-#{$i} {
+    padding: #{$i}px;
+  }
+}
+/* Margin Utilities with Custom px-n */
+.m-px { margin: var(--margin-px, 1px); }
+
+@for $i from 0 to 100 {
+  .m-mx-#{$i} {
+    margin: #{$i}px;
+  }
+}

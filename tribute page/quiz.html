@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lionel Messi Quiz</title>
+    <link rel="stylesheet" href="styleTest.css">
+    <link rel="stylesheet" href="styleutil1.css">
+    <link rel="stylesheet" href="styleutil2.css">
+    <link rel="shortcut icon" href="./images/HD-wallpaper-messi-jersey-10-campnou-fcbarcelona-goat-god-lm10.jpg" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="body">
+    
+    <div class="body-wrapper">
+        <div class="welcome flex flex-col items-center bg-white text-gray-700 h-9/12 p-5 gap-20 rounded-xl w-11/12 transition-all duration-500 max-w-3xl">
+            <div class="header">
+                <p class="text-3xl py-4 font-bold text-center">Welcome to the Lionel Messi Quiz</p>
+            </div>
+            <div class="text1">
+                <p class="font-semibold text-lg text-center">This specially curated quiz contains <span class="font-bold">10 questions</span> about Messi and his career. You think you are his real fan? Well then, attempt the quiz and find out how much do you actually know about him.</p>
+            </div>
+            <div class="quote">
+                <p class="text-2xl text-center font-semibold italic">"I always try to give my best, play my game, and help my team." - Lionel Messi</p>
+            </div>
+            <div class="text2">
+                <p class="font-semibold text-center">Click the start quiz button below to start the quiz. Beware, you cannot skip a question or revist an already answered question.
+                The result is shown after all the questions have been answered.</p>
+                </p>
+            </div>
+            <div class="start-btn-wrapper py-4">
+                <button id="start-quiz" class="start-btn opacity-90 h-11 w-32 rounded border border-blue-700 bg-blue-700 font-medium text-white hover:opacity-100">Start Quiz</button>
+            </div>
+        </div>
+        <div class="app hidden transition-all duration-500">
+            <div class="quiz">
+                <h2 id="question">
+                    Question goes here
+                </h2>
+                <div id="answer-buttons">
+                    <button class="btn">
+                        Answer 1 
+                    </button>
+                    <button class="btn">
+                        Answer 2
+                    </button>
+                    <button class="btn">
+                        Answer 3 
+                    </button>
+                    <button class="btn">
+                        Answer 4 
+                    </button>
+                </div>
+                <div class="wrap-btn">
+                    <button id="next-btn">
+                        Next
+                    </button>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    
+    
+    <script src="scriptTest.js"></script>
+</body>
+</html>

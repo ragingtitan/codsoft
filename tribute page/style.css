@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+@font-face {
+    font-family: 'Museo';
+    src: url('MuseoSans-Regular.woff2') format('woff2'),
+         url('MuseoSans-Regular.woff') format('woff'),
+         url('MuseoSans-Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  body {
+    font-family: 'Museo', sans-serif;
+  }
+.navbar li {
+    position: relative; /* Ensure relative positioning for the pseudo-element */
+    padding: 4px;
+    border-radius: 0.5rem;
+    transition: color 0.3s ease-in-out;
+    height: 30px;
+}
+
+.navbar li::after {
+    content: ''; /* Required for pseudo-elements */
+    position: absolute; /* Position relative to the parent li */
+    left: 0; /* Align to the left edge of the li */
+    bottom: 0; /* Align at the bottom of the li */
+    width: 0; /* Initially, the width is zero */
+    height: 4px; /* Height of the underline */
+    background-color: #004D98; /* Color of the underline */
+    transition: width 0.3s ease-in-out; /* Smooth transition for the width */
+}
+
+.navbar li:hover::after {
+    width: calc(100%); /* Increase width to stretch from left to right */
+}
+.navbar li:hover{
+    color:#A50044;
+    cursor: pointer;
+    
+}
+.navbar h1 {
+    margin-top: 0;
+    background: linear-gradient(90deg, #004D98, #A50044);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.carousel-item {
+    transition: transform 0.5s ease;
+}
+.carousel{
+    width: 720px;
+}
+.carousel-inner{
+    width: 720px;
+}
+/*img{
+    transform: scale(1.00);
+}
+img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}*/
+img{
+    width: 40rem;
+}
+img:hover{
+    cursor: pointer;
+
+}
+.narrative button:hover{
+    background-color:#cf0257;
+    
+}
+.narrative button{
+    opacity: 0.1;
+}
+.narrative{
+    margin-top: 100px;
+}
+.quiz-btn {
+    background:rgba(29,78,216,1);
+    padding: 10px 20px; /* Adjust padding as needed */
+    cursor: pointer; /* Change cursor to pointer on hover */;
+    transition: background 0.3s ease-in-out;
+    animation: anim both 1s ease-in-out infinite; /*
+}
+
+.quiz-btn:hover {
+    /* Optionally, change gradient or other properties on hover */
+    background: linear-gradient(90deg, #A50044, #004D98);
+
+}
+.scale:hover{
+    transform: scale(1.05);
+}
+.timeline ul{
+    list-style: decimal;
+    padding: 0.9rem;
+    justify-content: center;
+}
+/* For Firefox */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  .anim:hover{
+    transform: translateY(-20px);
+    
+  }
+  h1{
+    font-size: 3rem;
+}
+.selected{}

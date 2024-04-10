@@ -1,0 +1,26 @@
+/* Styles for screens smaller than 768px */
+@media screen and (max-width: 600px) {
+    /* Add your styles for smaller screens here */
+    .biography .biography-section-1,.biography-section-2,.biography-section-3{
+        flex-direction: column;
+    }
+    .content{
+       width: 100%;
+    }
+    .life-career .life-career-1,.life-career-2{
+        flex-direction: column;
+    }
+    .personal-life-section-1{
+        flex-direction: column;
+    }
+    
+}
+/* Styles for screens between 768px and 1024px */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    /* Add your styles for medium-sized screens here */
+}
+
+/* Styles for screens larger than 1024px */
+@media screen and (min-width: 1024px) {
+    /* Add your styles for larger screens here */
+}
